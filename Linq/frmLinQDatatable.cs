@@ -63,6 +63,16 @@ namespace Linq
 
         private void cboCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int refC = Convert.ToInt32(cboCourse.SelectedValue.ToString());
+
+            var student = from DataRow st in myset.Tables["Students"].Rows
+                          where st.Field<Int32>("RefCourse") == refC
+                          select st;
+
+            GridResult.DataSource=student.CopyToDataTable();
+
+
+
 
         }
     }
