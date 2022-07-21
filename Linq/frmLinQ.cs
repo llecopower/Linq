@@ -42,17 +42,6 @@ namespace Linq
 
             GridResult.DataSource = Students.ToList();
 
-
-
-
-
-
-
-
-
-
-
-
         }
 
         private void cboProgram_SelectedIndexChanged(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Linq
 {
     internal static class Program
@@ -16,7 +17,9 @@ namespace Linq
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLinQ());
+          //  Application.Run(new frmLinQ());
+            Application.Run(new frmLinQDatatable());
+           
         }
     }
 }
